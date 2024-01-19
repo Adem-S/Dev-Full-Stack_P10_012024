@@ -22,5 +22,5 @@ jobs:
         with:
           args:
             -Dsonar.projectKey=Adem-S_Gerez-un-projet-collaboratif-en-int-grant-une-demarche-CI-CD
-            -Dsonar.organization=
+            -Dsonar.organization=adem-s
          
