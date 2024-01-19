@@ -25,6 +25,12 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Test with Maven
       run: mvn -B test --file pom.xml
+    - name: List
+      run: ls -R 
+    - name: List
+      run: ls -R target/
+    - name: List
+      run: ls -R target/site/
     - name: Upload jacoco coverage
       uses: actions/upload-artifact@v3
       with:
