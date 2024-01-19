@@ -24,9 +24,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
-          projectBaseDir: .
+          projectBaseDir: front
           args:
             -Dsonar.projectKey=Adem-S_Gerez-un-projet-collaboratif-en-int-grant-une-demarche-CI-CD
             -Dsonar.organization=adem-s
-            -Dsonar.sources=/src
-            -Dsonar.tests=/src
+            -Dsonar.sources=src/
+            
