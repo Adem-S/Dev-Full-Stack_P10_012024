@@ -37,7 +37,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=adem-s_Dev-Full-Stack_P8_012024_1-back -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
+      run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=adem-s_Dev-Full-Stack_P10_012024_1-back -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
     - name: Upload jacoco coverage
       uses: actions/upload-artifact@v3
       with:
