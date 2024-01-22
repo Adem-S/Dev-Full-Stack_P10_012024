@@ -25,4 +25,4 @@ jobs:
           context: ./front
           file: ./front/Dockerfile
           push: true
-          tags: Adem-S/bobapp-front:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/bobapp-front:latest
