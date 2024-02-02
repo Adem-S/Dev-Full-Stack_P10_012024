@@ -62,7 +62,6 @@ jobs:
         with:
           context: ./front
           file: ./front/Dockerfile
-          platforms: linux/amd64,linux/arm64
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/bobapp-front:latest
   
